@@ -1,0 +1,27 @@
+.select{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label{
+        width: 140px;
+    }
+    select{
+        width: 300px;
+        height: 44px;
+        border-radius: 3px;
+        border: 1px solid #C3C3C3;
+        background: #FFF; 
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &_option-active{
+        background-color: #FFDA42;;
+    }
+    &_option:hover{
+        background-color: orange;
+    }
+    span{
+        color: red;
+    }
+}
+

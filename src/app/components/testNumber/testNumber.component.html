@@ -1,0 +1,11 @@
+<div class= "number" [formGroup] = "testForm.formGroup" >
+  <label for="testForm.id">{{testForm.label}}<span *ngIf="testForm.required === true">*</span></label>
+  <input type="number" min="1" max="100"  class = "form-control" [formControlName]="testForm.id" [id] ="testForm.id" [placeholder] = "testForm.placeholder">
+  <div class="number_btns">
+    <div (click) = "changeNumberUp(testForm)">&#9650;</div>
+    <div (click) = "changeNumberDown(testForm)">&#9660;</div>
+  </div>
+  <label *ngIf="testForm.error">
+      {{testForm.errorMessage}}
+  </label>
+</div>

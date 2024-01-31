@@ -1,0 +1,11 @@
+<div class= "select" [formGroup] = "testForm.formGroup" >
+  <label for="testForm.id">{{testForm.label}}<span *ngIf="testForm.required === true">*</span></label>
+  <select class = "select_select" [formControlName]="testForm.id" [id] ="testForm.id" type="select" (change)="onClick($event)">
+    @for(item of choices; track item){
+      <option  (value) = "item.label" [ngClass] = "item == selected ? 'select_option-active' : 'select_option' " (click) = 'log(item)' >{{item}}</option>
+    }
+  </select>
+  <label *ngIf="testForm.error">
+      {{testForm.errorMessage}}
+  </label>
+</div>

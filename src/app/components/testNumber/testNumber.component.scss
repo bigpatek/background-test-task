@@ -1,0 +1,63 @@
+.number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label{
+        width: 140px;
+    }
+    input{
+        width: 70px;
+        height: 44px; 
+        border-radius: 3px;
+        border: 1px solid #C3C3C3;
+        background: #FFF; 
+        padding-left: 15px;
+        color: #000;
+        font-family: "PT Sans";
+        font-size: 17px;
+        font-weight: 400;
+    }
+    span{
+        color: red;
+    }
+    &_btns{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    &_btns div:nth-child(1){
+        border-radius: 5px 5px 0px 0px;
+        border-bottom: 1px #9D9D9D solid;
+
+    }
+    &_btns div:nth-child(2){
+        border-radius: 0px 0px 5px 5px;
+        border-top: 1px #9D9D9D solid;
+    }
+    &_btns div{
+        background-color: #DFDFDF;
+        width: 30px;
+        height: 22px;
+        text-align: center;
+        cursor: pointer;
+        color: #9D9D9D;
+    }
+    &_btns div+div{
+        margin-top: 0px;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}

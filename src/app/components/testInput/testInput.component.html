@@ -1,0 +1,16 @@
+<div class= "textarea" [formGroup] = "testForm.formGroup" >
+  <label for="testForm.id">{{testForm.label}}<span *ngIf="testForm.required == true">*</span></label>
+  <div>
+    <div class="textarea_inputs">
+      <input [ngClass] = "testForm.extends ? 'textarea_extends' : 'textarea_normal' " [formControlName]="testForm.id" [id] ="testForm.id" [placeholder] = "testForm.placeholder" >
+      <a class="textarea_delete" *ngIf="testForm.extended" (click) = "onDelete(testForm)"></a>
+      <a *ngIf="testForm.extends == true" (click) = "onAdd(testForm)"><p>Добавить ещё</p></a>
+    </div>
+    <p *ngIf="testForm.description" class="textarea_description">
+      {{testForm.description}}
+    </p>
+  </div>
+  <label *ngIf="testForm.error">
+      {{testForm.errorMessage}}
+  </label>
+</div>

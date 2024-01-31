@@ -1,0 +1,9 @@
+<div class= "checkbox" [formGroup] = "testForm.formGroup" >
+  <label for="testForm.id" class="checkbox_box_label">{{testForm.label}}<span *ngIf="testForm.required === true">*</span></label>
+  <div class="checkbox_group" >
+    <div *ngFor="let item of choices" class="checkbox_boxes">
+      <input class = "checkbox_custom" type =  "checkbox"  [id] ="item.id" (value) = "item.label" (click)="onClick(item)" [checked]="item.picked">
+      <label for="item.id" [ngClass] = "item.id === 'select-all-skills' ? 'checkbox_label selectAll' : 'checkbox_label' " >{{item.label}}</label>
+    </div>
+  </div>
+</div>

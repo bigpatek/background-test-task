@@ -1,0 +1,151 @@
+{
+  "form": [
+    {
+      "id": "name",
+      "type": "text-box",
+      "label": "Имя",
+      "required": true,
+      "placeholder": "",
+      "errorMessage": "Обязательное поле"
+    },
+    {
+      "id": "age",
+      "type": "number-box",
+      "label": "Возраст",
+      "required": true,
+      "placeholder": "",
+      "errorMessage": "Обязательно поле"
+    },
+    {
+      "id": "relationship",
+      "type": "select-box",
+      "label": "Семейное положение",
+      "required": true,
+      "placeholder": "",
+      "choices": [
+        "Не женат / не замужем",
+        "Женат / замужем"
+      ],
+      "errorMessage": "Обязательно поле"
+    },
+    {
+      "id": "education",
+      "type": "text-box",
+      "label": "ВУЗ",
+      "required": false,
+      "extends": true,
+      "placeholder": "Например, ВолгГУ",
+      "description": "Укажите заведения, в которых вы учились."
+    },
+    {
+      "id": "hometown",
+      "type": "select-box",
+      "label": "Место рождения",
+      "required": false,
+      "placeholder": "",
+      "choices": [
+        "Не важно",
+        "Астрахань",
+        "Волгоград",
+        "Волжский",
+        "Ростов-на-Дону",
+        "Саратов",
+        "Элиста"
+      ],
+      "errorMessage": ""
+    },
+    {
+      "id": "skills",
+      "type": "check-box-group",
+      "label": "Навыки",
+      "required": false,
+      "placeholder": "",
+      "choices": [
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Общение",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Иностранные языки",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Бег с препятствиями",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Быстрое чтение",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Самозащита",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Вождение",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Программирование",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Управление вертолетом",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "skill",
+          "type": "check-box",
+          "label": "Оперное пение",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        },
+        {
+          "id": "select-all-skills",
+          "type": "check-box",
+          "label": "Выделить все",
+          "required": false,
+          "placeholder": "",
+          "errorMessage": ""
+        }
+      ],
+      "errorMessage": ""
+    }
+  ],
+  "answer": [
+    
+  ]
+}

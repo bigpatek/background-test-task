@@ -1,0 +1,64 @@
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    max-height: 150px;
+    &_box_label{
+        width: 140px;
+    }
+    &_label{
+        width: 205px;
+        margin-left: 10px;
+        height: 30px;
+    }
+    &_group{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &_boxes{
+        width: 250px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &_custom{
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        appearance: none;
+        width: 21px;
+        height: 21px;
+        border: 1px solid #999;
+        border-radius: 4px;
+        outline: none;
+        box-sizing: border-box;
+        margin-left: 0px;
+    }
+
+    &_custom:checked::before {
+        content: '\e876';
+        font-family: "Material Symbols Outlined";
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        color: black;
+    }
+
+    &_custom:checked {
+        background-color: orange;
+    }
+    &_label.selectAll{
+        font-weight: 700;
+    }
+
+
+    div+div{
+        margin-top: 0px;
+    }
+    span{
+        color: red;
+    }
+
+}
