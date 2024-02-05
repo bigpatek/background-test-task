@@ -1,27 +1,32 @@
-# BackgroundTestTask
+# Тестовое задание для компании Background - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Реализован генератор форм, где каждый элемент формы - Angular компонент.
 
-## Development server
+## Основные компоненты
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. testInput 
+2. testSelect 
+3. testNumber 
+4. testCheckbox
 
-## Code scaffolding
+## Дополнительные библиотеки 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. json-server (npm install json-server)
 
-## Build
+## Описание
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+С сервера приходит json с описанием формы которую надо сгенерировать (в нашем случае все находится в файле db.json и обмен с сервером происходит благодаря библиотеке json-server), после ответа от сервера необходимая форма генерируется и отрисывовывается. После заполнения форма отсылается на сервер.
 
-## Running unit tests
+1. Изначальный вид формы после ответа от сервера
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![1](https://i.postimg.cc/T3s25fzR/initForm.png)
 
-## Running end-to-end tests
+2. Вид формы после заполнения 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![2](https://i.postimg.cc/RZhV0Nbs/filled-Form.png)
 
-## Further help
+3. Ответ на сервере (сохраняется в db.json)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![3](https://i.postimg.cc/5Nn21wpQ/answ-er2.png)
+
+
